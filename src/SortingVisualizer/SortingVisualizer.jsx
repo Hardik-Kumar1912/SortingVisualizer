@@ -28,7 +28,7 @@ export default class SortingVisualizer extends React.Component {
     window.removeEventListener("resize", this.handleResize);
   }
 
-  getNumberOfBars = () => (window.innerWidth < 768 ? 80 : 250);
+  getNumberOfBars = () => (window.innerWidth < 768 ? 90 : 250);
 
   getAnimationSpeed = () => (window.innerWidth < 768 ? 4 : 1);
 
@@ -266,7 +266,7 @@ export default class SortingVisualizer extends React.Component {
 
         {/* Sorting Bars */}
         <div
-          className="flex items-end space-x-0.5 border border-gray-700 p-2 bg-gray-800 w-full max-w-5xl overflow-hidden mt-7"
+          className="flex justify-center items-end space-x-0.5 border border-gray-700 p-2 bg-gray-800 w-full max-w-5xl overflow-hidden mt-7"
           style={{ height: `${parentHeight}px` }}
         >
           {array.map((value, idx) => (
